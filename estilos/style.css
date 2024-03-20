@@ -34,25 +34,12 @@ section{
 
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.451);
 
     transition: width 1s, height .3s;
     transition-timing-function: ease;
-}
-
-
-div#principal{
-    margin: auto;
-    background-color: white;
-    height: 500px;
-    width: 250px;
-    border-radius: 15px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
 
 div#imagem{
@@ -71,52 +58,78 @@ div#formulario{
 
 }
 
-h1 {
+div#formulario > h1 {
     text-align: center;
+    margin-bottom: 10px;
 }
 
 
 div#formulario > p{
-    margin: auto;
+    font-size: 0.8em;
+}
+
+input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #2d6462;
+}
+
+a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #49a09d;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #2d6462;
+    background-color: white;
+    margin-top: 5px;
+}
+
+a.botao:hover{
+    background-color: #6cd3cf;
 }
 
 div#divmail{
     background-color: var(--roxo);
-    border-radius: 8px;
-    height: 35px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 div#divsenha{
     background-color: var(--roxo);
-    border-radius: 8px;
-    height: 35px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
-input{
-    display: block;
-    margin: auto;
-    height: 35px;
-    width: 96%;
-    border-radius: 8px;
-    margin: 6px;
+label{
+    display: none;
 }
-
 
 input#imail{
     background-color: #68c3c0;
+    border: none;
 }
 
 input#isenha{
     background-color: #68c3c0;
+    border: none;
+    
 }
 
-input#botaoentrar{
-    background-color: var(--verde);
-    border: 0px;
-}
-
-input#botaoesqueci{
-    background-color: white;
-    border: 0px;
-    box-shadow: 0px 0px 5px #49a09d;
-}
